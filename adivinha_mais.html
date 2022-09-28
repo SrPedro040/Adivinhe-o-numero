@@ -8,10 +8,10 @@
 <script>
 	
 	var numeroPensando = Math.round(Math.random() * 10);
-	console.log(numeroPensando);
 
 	var input = document.querySelector("input");
-
+	input.focus();
+	
 	function verifica() {
 
 		if(input.value == numeroPensando) {
@@ -23,6 +23,9 @@
 			alert("Você errou :(");
 
 		}
+		
+		input.value = "";
+		input.focus();
 	}
 
 	var button = document.querySelector("button");
