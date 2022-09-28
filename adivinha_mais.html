@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<title>Jogo de Adivinhar</title>
+<h2>Chute um número e teste sua sorte.</h2>
+<input/>
+<button>Verificar</button>
+
+<script>
+	
+	var numeroPensando = Math.round(Math.random() * 10);
+	console.log(numeroPensando);
+
+	var input = document.querySelector("input");
+
+	function verifica() {
+
+		if(input.value == numeroPensando) {
+
+			alert("Parabéns, Você acertou!");
+
+		} else{
+
+			alert("Você errou :(");
+
+		}
+	}
+
+	var button = document.querySelector("button");
+	button.onclick = verifica
+
+
+</script>
